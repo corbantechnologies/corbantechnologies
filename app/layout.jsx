@@ -1,3 +1,4 @@
+import Navbar from "./components/custom/Navbar";
 import "./globals.css";
 
 export default function RootLayout({ children }) {
@@ -10,7 +11,12 @@ export default function RootLayout({ children }) {
           content="Empowering lives through innovation: Technology tailored for your home, business, and growth."
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <Navbar/>
+        <div className=''>
+        {children}
+        </div>
+      </body>
     </html>
   );
 }
