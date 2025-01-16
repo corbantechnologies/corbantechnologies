@@ -28,12 +28,12 @@ function Navbar() {
     },[])
 
   return (
-    <div className={`flex fixed w-full text-white ${active ? 'bg-black/45 backdrop-blur-sm ':''} px-4 md:px-8 bg-dark z-50 justify-between items-center py-4`}>
+    <div className={`flex fixed w-full ${active ? ' bg-black/45 backdrop-blur-sm text-white ':' '} px-2 md:px-8 bg-dark z-50 justify-between items-center py-2`}>
         <div>
         <h1 className="text-2xl tracking-wider -mb-2 md:text-4xl text-center"><b className="text-primary">C</b>orban</h1>
         <span className="ml-1">Technologies</span>
         </div>
-        <button onClick={()=>setMenuOpen(prev=>!prev)} className="md:hidden border border-white border-opacity-30 size-8 inline-flex justify-center items-center rounded-lg">
+        <button onClick={()=>setMenuOpen(prev=>!prev)} className={`md:hidden border ${active ? 'border-white ' :'border-black '} border-opacity-30 size-8 inline-flex justify-center items-center rounded-lg`}>
       {menuOpen ?
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m7 7l10 10M7 17L17 7"/></svg>      
         :
@@ -50,7 +50,7 @@ function Navbar() {
                 <button className="hidden md:block bg-primary text-white rounded-full px-4 py-2">
                 Get in Touch
                 </button>
-        {menuOpen && <ul className={`absolute w-[80vw] pl-6 top-[80px] h-[100vh] bg-dark z-50 transition-all md:hidden ${menuOpen ? 'left-0' :'-left-[1000px]'}`}>
+        {menuOpen && <ul className={`absolute w-[80vw] pl-6 top-[64px] md:top-[80px] h-[100vh] bg-black/80 text-white z-50 transition-all md:hidden ${menuOpen ? 'left-0' :'-left-[1000px]'}`}>
             {links.map((link)=>(
                 <li key={link.id} className="py-3" onClick={()=>setMenuOpen(false)}>
                     <a href={link.href}>{link.title}</a>

@@ -24,13 +24,15 @@ body {
   width: 100%;
 }
 .heroBg{
-  background-image: url('/heroBg6.jpg');
+  background-image: url('/heroMain.avif');
   background-size: cover;
   background-position: center;
-  height: 100vh;
 }
 .radialBackground {
   background: radial-gradient(circle, rgba(255, 165, 0, 0.2) 0%, rgba(255, 165, 0, 0) 70%);
+}
+.darkRadialBg{
+  background-image: radial-gradient(50% 50% at 50% 50%,#172543,#000);
 }
 @layer base {
   :root {
