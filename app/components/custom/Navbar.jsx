@@ -28,16 +28,16 @@ function Navbar() {
     },[])
 
   return (
-    <div className={`flex fixed w-full ${active ? ' bg-black/45 backdrop-blur-sm text-white ':' '} px-2 md:px-8 bg-dark z-50 justify-between items-center py-2`}>
+    <div className={`flex fixed w-full border-b ${active ? ' bg-black/45 backdrop-blur-sm text-white ':' '} px-4 md:px-8 bg-dark z-50 justify-between items-center py-2`}>
         <div>
         <h1 className="text-2xl tracking-wider -mb-2 md:text-4xl text-center"><b className="text-primary">C</b>orban</h1>
-        <span className="ml-1">Technologies</span>
+        <span className="ml-2">Technologies</span>
         </div>
         <button onClick={()=>setMenuOpen(prev=>!prev)} className={`md:hidden border ${active ? 'border-white ' :'border-black '} border-opacity-30 size-8 inline-flex justify-center items-center rounded-lg`}>
       {menuOpen ?
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m7 7l10 10M7 17L17 7"/></svg>      
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m7 7l10 10M7 17L17 7"/></svg>      
         :
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-5 -7 24 24"><path fill="currentColor" d="M1 0h5a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2m7 8h5a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2M1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="-5 -7 24 24"><path fill="currentColor" d="M1 0h5a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2m7 8h5a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2M1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2"/></svg>
       }
       </button>
         <ul className="hidden md:flex gap-8 items-center">
