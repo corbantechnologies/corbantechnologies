@@ -85,7 +85,7 @@ function CallToAction() {
         setCurrentIndex(index);
     };
   return (
-    <div className="px-4 md:px-8 mt-10 mb-20">
+    <div className="px-4 lg:px-8 mt-10 mb-20">
         <h1 className="text-primary text-center font-bold text-sm mb-2">SOLUTIONS</h1>
         <h2 className="text-3xl font-bold text-center mb-3">We provide the solutions you need</h2>
         <p className='text-center md:max-w-screen-md mb-8 mx-auto'>Whether you&apos;re a small business looking to streamline operations, a startup ready to scale, or an individual seeking innovative tech solutions, you&apos;ve come to the right spot.</p>

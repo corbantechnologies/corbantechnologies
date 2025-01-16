@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function About() {
   return (
-    <div className="px-4 md:px-8 py-10">
+    <div className="px-4 lg:px-8 py-10">
       <div className="grid grid-cols-1 md:grid-cols-2 justify-between max-w-screen-xl mx-auto gap-4 items-center">
         <div className="h-full rounded-xl overflow-hidden">
           <Image

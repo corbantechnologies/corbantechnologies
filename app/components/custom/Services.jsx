@@ -12,7 +12,7 @@ const cards2 = [
 ]
 function Services() {
   return (
-    <div className="bg-slate-100 py-16 px-4 md:px-8 flex flex-col md:flex-row gap-5 justify-between">
+    <div className="bg-slate-100 py-16 px-4 lg:px-8 flex flex-col md:flex-row gap-5 justify-between">
         <div className="flex-1 md:sticky top-24 h-screen">
         <h1 className="text-primary text-center md:text-left font-bold text-lg">Our services</h1>
         <h2 className="text-3xl text-center md:text-left  md:text-7xl font-bold text-black my-3 md:my-5">How we <br className="hidden md:block"/> help you</h2>
