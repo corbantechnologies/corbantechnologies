@@ -28,7 +28,7 @@ function Navbar() {
     },[])
 
   return (
-    <div className={`flex fixed w-full border-b ${active ? ' bg-black/45 backdrop-blur-sm text-white ':' '} px-4 md:px-8 bg-dark z-50 justify-between items-center py-2`}>
+    <div className={`flex fixed w-full border-b md:border-none ${active ? ' bg-black/45 backdrop-blur-sm text-white ':' '} px-4 md:px-8 bg-dark z-50 justify-between items-center py-2`}>
         <div>
         <h1 className="text-2xl tracking-wider -mb-2 md:text-4xl text-center"><b className="text-primary">C</b>orban</h1>
         <span className="ml-2">Technologies</span>

@@ -12,37 +12,37 @@ const cards2 = [
 ]
 function Services() {
   return (
-    <div className=" px-4 md:px-8 flex flex-col md:flex-row gap-5 justify-between">
+    <div className="bg-slate-100 py-16 px-4 md:px-8 flex flex-col md:flex-row gap-5 justify-between">
         <div className="flex-1 md:sticky top-24 h-screen">
         <h1 className="text-primary text-center md:text-left font-bold text-lg">Our services</h1>
         <h2 className="text-3xl text-center md:text-left  md:text-7xl font-bold text-black my-3 md:my-5">How we <br className="hidden md:block"/> help you</h2>
         <p className="text-black text-center md:text-left  text-lg">Corban Technologies offers a wide range of digital solutions tailored to meet your business needs.</p>
-        <div className="flex justify-center">
+        <div className="flex justify-center md:justify-start">
         <button className="border border-gray-700 rounded-full px-5 py-3 my-5 text-black transition-all duration-500 hover:border-transparent hover:bg-primary hover:text-white flex justify-between items-center">Learn more <ChevronsRight /> </button>
         </div>
         </div>
-        <div className="flex-[2] grid grid-cols-1 sm:grid-cols-2 md:gap-5">
+        <div className="flex-[2] grid grid-cols-1 sm:grid-cols-2 gap-5">
             <ul>
                 {cards1.map((card)=>(
-                    <li key={card.id} className=" bg-gray-950 border border-gray-700 rounded-xl mb-5 overflow-hidden">
-                        <div className="bg-[#0f1521] m-4 border size-12 text-[#53b1fd] grid place-content-center border-gray-700 rounded-md">
+                    <li key={card.id} className=" bg-white shadow rounded-xl mb-5 overflow-hidden">
+                        <div className="m-4 border size-12 text-gray-950 grid place-content-center rounded-md">
                             {card.icon}
                         </div>
-                        <h2 className="px-4 mb-4 font-semibold text-white text-2xl">{card.title}</h2>
-                        <p className="px-4 text-gray-400 txet-lg mb-4">{card.desc}</p>
-                        <button className="w-full text-white font-semibold text-lg py-3 px-4 flex items-center justify-between group">Learn more <ArrowDownRight className="transition-all group-hover:-rotate-45 " /> </button>
+                        <h2 className="px-4 mb-4 font-semibold text-gray-950 text-2xl">{card.title}</h2>
+                        <p className="px-4 text-gray-600 mb-4">{card.desc}</p>
+                        <button className="w-full text-gray-950 font-semibold text-lg py-3 px-4 flex items-center justify-between group">Learn more <ArrowDownRight className="transition-all group-hover:-rotate-45 " /> </button>
                     </li>
                 ))}
             </ul>
             <ul className="mt-0 md:mt-8">
                 {cards2.map((card)=>(
-                    <li key={card.id} className=" bg-gray-950 border border-gray-700 rounded-xl mb-5 overflow-hidden">
-                        <div className="bg-[#0f1521] m-4 border size-12 text-[#53b1fd] grid place-content-center border-gray-700 rounded-md">
+                    <li key={card.id} className=" bg-white shadow rounded-xl mb-5 overflow-hidden">
+                        <div className="m-4 border size-12 text-gray-950 grid place-content-center rounded-md">
                             {card.icon}
                         </div>
-                        <h2 className="px-4 mb-4 font-semibold text-white text-2xl">{card.title}</h2>
-                        <p className="px-4 text-gray-400 text-lg mb-4">{card.desc}</p>
-                        <button className="w-full text-white font-semibold text-lg py-3 px-4 flex items-center justify-between group">Learn more <ArrowDownRight className="transition-all group-hover:-rotate-45 " /> </button>
+                        <h2 className="px-4 mb-4 font-semibold text-gray-950 text-2xl">{card.title}</h2>
+                        <p className="px-4 text-gray-600 mb-4">{card.desc}</p>
+                        <button className="w-full text-gray-950 font-semibold text-lg py-3 px-4 flex items-center justify-between group">Learn more <ArrowDownRight className="transition-all group-hover:-rotate-45 " /> </button>
                     </li>
                 ))}
             </ul>
