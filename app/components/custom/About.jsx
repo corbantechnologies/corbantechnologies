@@ -2,15 +2,15 @@ import { ChevronsRight, Sparkles, Telescope } from "lucide-react";
 
 function About() {
   return (
-    <div className="px-4 lg:px-8 py-5">
+    <div className="px-4 lg:px-8 pt-10 pb-5 grid grid-cols-1 md:grid-cols-2 gap-5 max-w-screen-lg mx-auto">
         <div>
-          <h1 className="text-primary text-center font-bold text-sm mb-2">
+          <h1 className="text-primary text-center md:text-left font-bold text-sm mb-2">
             ABOUT US
           </h1>
-          <h2 className="text-3xl text-center lg:text-4xl font-bold text-primaryDark mb-5">
+          <h2 className="text-3xl text-center md:text-left lg:text-4xl font-bold text-primaryDark mb-5">
             Where Ideas <br className="block md:hidden"/> Become a Reality
           </h2>
-          <p className="text-gray-600 text-center lg:text-lg md:w-3/4 md:mx-auto">
+          <p className="text-gray-600 text-center md:text-left lg:text-lg ">
             We are dedicated to empowering businesses and individuals through
             innovative technology solutions. With a focus on understanding our
             clients' unique challenges, we deliver tailored services that drive
@@ -18,8 +18,13 @@ function About() {
             building lasting partnerships, ensuring that together we navigate the
             digital landscape and achieve success in an ever-evolving world.
           </p>
+          <div className="flex justify-center mt-5 md:justify-start">
+            <button className="bg-primary rounded-full px-5 py-3 text-white flex justify-between items-center">
+              Learn more <ChevronsRight />{" "}
+            </button>
+          </div>
         </div>
-        <div className="flex flex-col sm:flex-row mt-5 mb-10 gap-5">
+        <div className="flex flex-col mt-5 mb-10 gap-5">
           <div className="md:h-52 border rounded-xl p-3 flex flex-col gap-2 justify-evenly">
             <div className="size-9 bg-slate-100 rounded-full grid place-content-center">
               <Sparkles size={20} className="text-primary" />
@@ -47,11 +52,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center">
-            <button className="bg-primary rounded-full px-5 py-3 text-white flex justify-between items-center">
-              Learn more <ChevronsRight />{" "}
-            </button>
-          </div>
+        
     </div>
   );
 }

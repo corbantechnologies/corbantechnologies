@@ -14,7 +14,9 @@ const cards1 = [
 function Services() {
   return (
     <div className="bg-slate-50 py-5 px-4 lg:px-8">
-        <div className="">
+        <div className="max-w-screen-lg mx-auto">
+
+        <div>
         <h1 className="text-primary text-center font-bold text-lg">Our services</h1>
         <h2 className="text-3xl lg:text-4xl text-center font-semibold">How we help you</h2>
         <p className="text-gray-600 text-center lg:text-lg">Corban Technologies offers a wide range of digital solutions <br className="hidden md:block" /> tailored to meet your business needs.</p>
@@ -32,6 +34,7 @@ function Services() {
             </div>
             <div className="flex justify-center">
         <button className=" rounded-full px-5 py-3 bg-primary text-white flex justify-between items-center">Learn more <ChevronsRight /> </button>
+        </div>
         </div>
     </div>
   )
