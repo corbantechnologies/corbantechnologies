@@ -1,8 +1,6 @@
 'use client';
 
 import { BadgeCheck } from "lucide-react";
-import Image from "next/image";
-import { useEffect, useState } from "react";
 
 const userCategories = [
     {
@@ -65,61 +63,31 @@ const userCategories = [
 ];
 
 function CallToAction() {
-    const [selectedCategory, setSelectedCategory] = useState(userCategories[0]);
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => {
-                const nextIndex = (prevIndex + 1) % userCategories.length; 
-                setSelectedCategory(userCategories[nextIndex]);
-                return nextIndex;
-            });
-        }, 30000);
-
-        return () => clearInterval(interval); 
-    }, []);
-    const handleSelect = (category) => {
-        const index = userCategories.findIndex((cat) => cat.title === category.title);
-        setSelectedCategory(category);
-        setCurrentIndex(index);
-    };
   return (
-    <div className="px-4 lg:px-8 mt-10 mb-20">
-        <h1 className="text-primary text-center font-bold text-sm mb-2">SOLUTIONS</h1>
-        <h2 className="text-3xl font-bold text-center mb-3">We provide the solutions you need</h2>
-        <p className='text-center md:max-w-screen-md mb-8 mx-auto'>Whether you&apos;re a small business looking to streamline operations, a startup ready to scale, or an individual seeking innovative tech solutions, you&apos;ve come to the right spot.</p>
-        <ul className="flex gap-2 flex-wrap justify-center">
+    <div className="px-4 lg:px-8 my-10">
+        <h1 className="text-primary text-center font-bold text-sm mb-1">SOLUTIONS</h1>
+        <h2 className="text-3xl lg:text-4xl text-center font-bold mb-3">We provide the solutions you need</h2>
+        <p className='mb-8 text-center lg:text-lg text-gray-600'>Whether you&apos;re a small business looking to streamline operations, a startup ready to scale, <br /> or an individual seeking innovative tech solutions, you&apos;ve come to the right spot.</p>
+        <div className="mt-5 w-full overflow-auto flex gap-5 pb-5">
             {userCategories.map((cat)=>(
-                <li key={cat.title} className={`text-sm border ${selectedCategory.title === cat.title ? 'border-primary5 bg-primary3 text-white ':'border-primary6 bg-[#fffaf5] '} rounded-md px-4 py-2`}>
-                    <button onClick={() => handleSelect(cat)}>{cat.title}</button>
-                </li>
-            ))}
-        </ul>
-        <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5 md:max-w-screen-lg md:mx-auto">
-            <div className="rounded-xl overflow-hidden max-h-[400px]">
-                <Image src={selectedCategory.image} alt='user' width={500} height={500} className="object-cover w-full h-full"/>
-            </div>
-            <div className="rounded-xl overflow-hidden relative row-start-1 md:col-start-2 h-[400px]">
-                <Image src={selectedCategory.bg} alt='user' width={500} height={500} className='absolute left-0 right-0 h-full w-full z-0'/>
-                <div className="absolute text-black z-50 p-8 flex h-full flex-col justify-between">
-                    <div>
-                    <p className="text-3xl font-semibold mb-3">{selectedCategory.title}</p>
-                    <p className="text-lg mb-5">{selectedCategory.heading}</p>
-                    <ul>
-                        {selectedCategory.description.map((desc)=>(
-                            <li key={desc} className="text-[#696969] mb-3 flex items-center gap-1"><BadgeCheck size={20} className="flex-shrink-0 text-primary" /> {desc}</li>
-                        ))}
-                    </ul>
-                    </div>
-                    <div className="flex-grow flex flex-col justify-end w-fit">
-                    <button className="bg-primary text-white rounded-full px-4 py-2">
-                Schedule a meeting
-                </button>
-                    </div>
-                </div>
-            </div>
+               <div key={cat.title} className="rounded-xl border bg-[#f9f9fb] overflow-hidden w-[320px] md:w-[350px] flex-shrink-0 ">
+               <div className="p-5 md:p-8 flex h-full flex-col justify-between">
+                   <div>
+                   <p className="text-2xl mb-2">{cat.title}</p>
+                   <p className="mb-3 text-[17px] text-gray-600">{cat.heading}</p>
+                   <ul>
+                       {cat.description.map((desc)=>(
+                           <li key={desc} className="text-[#696969] text-[15px] mb-3 flex items-center gap-1"><BadgeCheck size={20} className="flex-shrink-0 text-primary" /> {desc}</li>
+                       ))}
+                   </ul>
+                   </div>
+               </div>
+           </div> 
+            )) }
         </div>
+                   <div className="flex justify-center">
+                   <button className="rounded-full px-5 py-3 my-5 bg-primary text-white">Schedule a meeting </button>
+                   </div>
     </div>
   )
 }
