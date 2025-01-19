@@ -20,7 +20,8 @@ function Hero() {
   }, []);
   const bg = windowWidth >= 768 ? "heroBg" : "";
   return (
-    <div className="pt-[90px] md:pt-[75px] px-0 lg:px-8 h-screen place-content-center md:mb-0 max-w-screen-lg mx-auto">
+    <div className="bg-slate-50">
+    <div className="pt-[90px] md:pt-[75px] px-4 lg:px-8 min-h-screen place-content-center md:mb-0 max-w-6xl mx-auto">
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 items-center">
         <div>
           <div className="flex justify-center md:justify-start">
@@ -39,7 +40,7 @@ function Hero() {
           <h1 className="text-3xl md:text-5xl font-semibold md:font-bold text-center md:text-left mx-auto md:mx-0 max-w-[320px] md:max-w-[500px] md:tracking-wide">
             Empowering lives through innovation & technology.
           </h1>
-          <p className="max-w-[320px] mx-auto md:mx-0 md:max-w-[500px] text-center md:text-left my-4 md:my-5 text-base md:text-[20px]">
+          <p className="max-w-[320px] mx-auto md:mx-0 md:max-w-[500px] text-center md:text-left my-4 md:my-5 text-gray-600 lg:text-lg">
             Your one-stop digital software solutions company. At Corban
             Technologies, we thrive on transforming your ideas into cutting-edge
             digital realities.
@@ -61,6 +62,7 @@ function Hero() {
             className=" rounded-lg mt-8 w-full"
           />
         </div>
+    </div>
     </div>
   );
 }
