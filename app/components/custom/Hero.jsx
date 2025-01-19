@@ -59,7 +59,7 @@ function Hero() {
             src="/heroMain.avif"
             alt="person using a laptop"
             width={360}
-            height={360}
+            height={320}
             className="md:hidden rounded-lg mt-8 w-full"
           />
         </div>
