@@ -13,13 +13,13 @@ const cards1 = [
 
 function Services() {
   return (
-    <div className="bg-slate-50 py-4 px-4 lg:px-8">
+    <div className="bg-slate-50 py-5 px-4 lg:px-8">
         <div className="">
         <h1 className="text-primary text-center font-bold text-lg">Our services</h1>
         <h2 className="text-3xl lg:text-4xl text-center font-semibold">How we help you</h2>
-        <p className="text-gray-600 text-center lg:text-lg">Corban Technologies offers a wide range of digital solutions <br /> tailored to meet your business needs.</p>
+        <p className="text-gray-600 text-center lg:text-lg">Corban Technologies offers a wide range of digital solutions <br className="hidden md:block" /> tailored to meet your business needs.</p>
         </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 mb-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 mb-5 px-4 md:px-0">
                 {cards1.map((card)=>(
                     <article key={card.id}>
                         <div className="my-4 border border-gray-300 size-12 text-gray-600 grid place-content-center rounded-md">

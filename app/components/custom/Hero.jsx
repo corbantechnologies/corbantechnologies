@@ -20,9 +20,9 @@ function Hero() {
   }, []);
   const bg = windowWidth >= 768 ? "heroBg" : "";
   return (
-    <div className="pt-[90px] md:pt-[75px] px-0 lg:px-8">
+    <div className="pt-[90px] md:pt-[75px] px-0 lg:px-8 mb-5 md:mb-0">
       <div
-        className={`${bg} h-screen text-black md:text-white relative lg:rounded-lg overflow-hidden`}
+        className={`${bg} h-[calc(100vh-90px)] md:h-screen text-black md:text-white relative lg:rounded-lg overflow-hidden`}
       >
         <div className="hidden md:absolute left-0 right-0 h-screen bg-black/20"></div>
         <div className="absolute md:pt-[100px] h-[100vh] md:block md:place-content-center left-4 right-4 md:left-8">

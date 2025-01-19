@@ -64,7 +64,7 @@ const userCategories = [
 
 function CallToAction() {
   return (
-    <div className="px-4 lg:px-8 my-10">
+    <div className="px-4 lg:px-8 mt-5 mb-10">
         <h1 className="text-primary text-center font-bold text-sm mb-1">SOLUTIONS</h1>
         <h2 className="text-3xl lg:text-4xl text-center font-bold mb-3">We provide the solutions you need</h2>
         <p className='mb-8 text-center lg:text-lg text-gray-600'>Whether you&apos;re a small business looking to streamline operations, a startup ready to scale, <br /> or an individual seeking innovative tech solutions, you&apos;ve come to the right spot.</p>
@@ -86,7 +86,7 @@ function CallToAction() {
             )) }
         </div>
                    <div className="flex justify-center">
-                   <button className="rounded-full px-5 py-3 my-5 bg-primary text-white">Schedule a meeting </button>
+                   <button className="rounded-full px-5 py-3 mt-5 bg-primary text-white">Schedule a meeting </button>
                    </div>
     </div>
   )

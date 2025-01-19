@@ -2,7 +2,7 @@ import { ChevronsRight, Sparkles, Telescope } from "lucide-react";
 
 function About() {
   return (
-    <div className="px-4 lg:px-8 py-10">
+    <div className="px-4 lg:px-8 py-5">
         <div>
           <h1 className="text-primary text-center font-bold text-sm mb-2">
             ABOUT US
@@ -10,7 +10,7 @@ function About() {
           <h2 className="text-3xl text-center lg:text-4xl font-bold text-primaryDark mb-5">
             Where Ideas <br className="block md:hidden"/> Become a Reality
           </h2>
-          <p className="text-gray-600 md:text-center lg:text-lg md:w-3/4 md:mx-auto">
+          <p className="text-gray-600 text-center lg:text-lg md:w-3/4 md:mx-auto">
             We are dedicated to empowering businesses and individuals through
             innovative technology solutions. With a focus on understanding our
             clients' unique challenges, we deliver tailored services that drive
@@ -19,7 +19,7 @@ function About() {
             digital landscape and achieve success in an ever-evolving world.
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row my-8 gap-5">
+        <div className="flex flex-col sm:flex-row mt-5 mb-10 gap-5">
           <div className="md:h-52 border rounded-xl p-3 flex flex-col gap-2 justify-evenly">
             <div className="size-9 bg-slate-100 rounded-full grid place-content-center">
               <Sparkles size={20} className="text-primary" />
