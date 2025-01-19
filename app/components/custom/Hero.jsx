@@ -21,7 +21,7 @@ function Hero() {
   const bg = windowWidth >= 768 ? "heroBg" : "";
   return (
     <div className="bg-slate-50">
-    <div className="pt-[90px] md:pt-[75px] px-4 lg:px-8 min-h-screen place-content-center md:mb-0 max-w-6xl mx-auto">
+    <div className="pt-[90px] md:pt-[75px] px-4 lg:px-8 min-h-screen place-content-center md:mb-0 max-w-[1200px] mx-auto">
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 items-center">
         <div>
           <div className="flex justify-center md:justify-start">

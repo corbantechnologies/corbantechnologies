@@ -2,7 +2,7 @@ import { ChevronsRight, Sparkles, Telescope } from "lucide-react";
 
 function About() {
   return (
-    <div className="px-4 lg:px-8 pt-10 pb-5 grid grid-cols-1 md:grid-cols-2 gap-5 max-w-6xl mx-auto">
+    <div className="px-4 lg:px-8 pt-10 pb-5 grid grid-cols-1 md:grid-cols-2 gap-5 max-w-[1200px] mx-auto">
         <div>
           <h1 className="text-primary text-center md:text-left font-bold text-sm mb-2">
             ABOUT US

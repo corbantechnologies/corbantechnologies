@@ -64,7 +64,7 @@ const userCategories = [
 
 function CallToAction() {
   return (
-    <div className="px-4 lg:px-8 mt-5 mb-10 max-w-6xl mx-auto">
+    <div className="px-4 lg:px-8 mt-5 mb-10 max-w-[1200px] mx-auto">
         <h1 className="text-primary text-center font-bold text-sm mb-1">SOLUTIONS</h1>
         <h2 className="text-3xl lg:text-4xl text-center font-bold mb-3">We provide the solutions you need</h2>
         <p className='mb-8 text-center lg:text-lg text-gray-600'>Whether you&apos;re a small business looking to streamline operations, a startup ready to scale, <br /> or an individual seeking innovative tech solutions, you&apos;ve come to the right spot.</p>

@@ -52,7 +52,7 @@ const cards1 = [
 function Services() {
   return (
     <div className="bg-slate-50 py-5">
-      <div className="max-w-6xl mx-auto px-4 lg:px-8">
+      <div className="max-w-[1200px] mx-auto px-4 lg:px-8">
         <div>
           <h1 className="text-primary text-center font-bold text-lg">
             Our services
