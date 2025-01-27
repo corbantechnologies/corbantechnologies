@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="pb-10">
+    <div className="pt-5 pb-10">
     <div className="pt-[90px] md:pt-[75px] px-4 lg:px-8 min-h-screen place-content-center md:mb-0 max-w-[1200px] mx-auto">
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-2 items-center">
         <div>

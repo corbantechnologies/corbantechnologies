@@ -25,7 +25,7 @@ function About() {
           </div>
         </div>
         <div className="flex flex-col mt-5 mb-10 gap-5">
-          <div className="md:h-52 border rounded-xl p-3 flex flex-col gap-2 justify-evenly">
+          <div className="md:h-52 shadow bg-white rounded-xl p-3 flex flex-col gap-2 justify-evenly">
             <div className="size-9 bg-slate-100 rounded-full grid place-content-center">
               <Sparkles size={20} className="text-primary" />
             </div>
@@ -38,7 +38,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="md:h-52 border rounded-xl p-3 flex flex-col gap-2 justify-evenly">
+          <div className="md:h-52 shadow bg-white rounded-xl p-3 flex flex-col gap-2 justify-evenly">
             <div className="size-9 bg-slate-100 rounded-full grid place-content-center">
               <Telescope size={20} className="text-primary" />
             </div>
