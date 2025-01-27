@@ -47,7 +47,7 @@ function Navbar() {
                 <button className="hidden lg:block bg-primary text-white rounded-full px-4 py-2">
                 Get in Touch
                 </button>
-        {menuOpen && <ul className={`absolute w-[80vw] pl-6 top-[64px] md:top-[75px] lg:top-[80px] h-[100vh] bg-black/80 text-white z-50 transition-all lg:hidden ${menuOpen ? 'left-0' :'-left-[1000px]'}`}>
+        {menuOpen && <ul className={`absolute w-[80vw] pl-6 top-[64px] md:top-[84px] h-[100vh] bg-white text-black z-50 transition-all lg:hidden ${menuOpen ? 'left-0' :'-left-[1000px]'}`}>
             {links.map((link)=>(
                 <li key={link.id} className="py-3" onClick={()=>setMenuOpen(false)}>
                     <a href={link.href}>{link.title}</a>
