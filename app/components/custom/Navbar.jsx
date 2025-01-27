@@ -29,11 +29,7 @@ function Navbar() {
 
   return (
     <div className={`flex fixed w-full md:border-none ${active ? ' bg-black/45 backdrop-blur-sm text-white ':'bg-white '} px-4 lg:px-8 bg-dark z-50 justify-between items-center py-2`}>
-        {/* <div>
-        <h1 className="text-2xl tracking-wider -mb-2 md:text-4xl text-center"><b className="text-primary">C</b>orban</h1>
-        <span className="ml-2">Technologies</span>
-        </div> */}
-        <Image src='/logoSmNoBg.png' alt="logo" width={160} height={80} />
+        <Image src='/logoSmNoBg.png' alt="logo" width={150} height={80} className="w-[120px] md:w-[150px]" />
         <button onClick={()=>setMenuOpen(prev=>!prev)} className={`lg:hidden border ${active ? 'border-white ' :'border-black '} border-opacity-30 size-8 inline-flex justify-center items-center rounded-lg`}>
       {menuOpen ?
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m7 7l10 10M7 17L17 7"/></svg>      

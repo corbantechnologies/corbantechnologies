@@ -4,9 +4,9 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="bg-slate-50">
-    <div className="pt-[90px] md:pt-[75px] px-4 lg:px-8 min-h-screen place-content-center md:mb-0 max-w-[1200px] mx-auto">
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 items-center">
+    <div className="bg-slate-50 py-10">
+    <div className="pt-[95px] md:pt-[75px] px-4 lg:px-8 min-h-screen place-content-center md:mb-0 max-w-[1200px] mx-auto">
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-2 items-center">
         <div>
           <div className="flex justify-center md:justify-start">
           <div className="border md:mx-0 mb-3 md:mb-5 p-[2px] w-fit pr-4 rounded-full flex items-center gap-1">
@@ -22,7 +22,7 @@ function Hero() {
             <span className="text-sm">Get it done right - the first time</span>
           </div>
           </div>
-          <h1 className="text-3xl md:text-5xl font-semibold md:font-bold text-center md:text-left mx-auto md:mx-0 max-w-[320px] md:max-w-[800px] md:tracking-wide ">
+          <h1 className="text-4xl md:text-5xl font-semibold md:font-bold text-center md:text-left mx-auto md:mx-0 max-w-[320px] md:max-w-[800px] md:tracking-wide ">
             Custom Solutions & Software Development Focused on Your Success.
           </h1>
           {/* <h1 className="text-3xl md:text-5xl font-semibold md:font-bold text-center md:text-left mx-auto md:mx-0 max-w-[320px] md:max-w-[500px] md:tracking-wide">

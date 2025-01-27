@@ -5,7 +5,7 @@ function Footer() {
     <footer className="py-5 px-4 lg:px-8 max-w-[1200px] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5">
         <div>
-            <Image src='/logoSmNoBg.png' alt="logo" width={160} height={80} />
+            <Image src='/logoSmNoBg.png' alt="logo" width={150} height={80} />
             <p className="text-gray-700">Empowering lives through innovation & technology</p>
         </div>
         <div className="mt-5 md:justify-self-center">
