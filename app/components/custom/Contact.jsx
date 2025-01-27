@@ -39,7 +39,7 @@ function Contact() {
             <button className="bg-primary text-white rounded-full px-8 mt-5 py-3">Talk to Us</button>
         </div>
        </div>
-       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8 mb-5 px-4 md:px-0">
+       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8 mb-5">
           {cards1.map((card) => (
             <article key={card.id} className="shadow bg-white px-4 rounded-xl">
               <div className="my-4 border border-gray-300 size-12 grid place-content-center rounded-md">

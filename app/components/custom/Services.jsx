@@ -64,7 +64,7 @@ function Services() {
             <br className="hidden md:block" /> improving it, we have the expertise your business requires.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 mb-5 px-4 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 mb-5">
           {cards1.map((card) => (
             <article key={card.id} className="border bg-[#f9f9fb] px-4 rounded-xl">
               <div className="my-4 border border-gray-300 size-12 grid place-content-center rounded-md">

@@ -8,7 +8,7 @@ function About() {
             ABOUT US
           </h1>
           <h2 className="text-3xl text-center md:text-left lg:text-4xl font-bold text-primaryDark mb-5">
-            Where Ideas <br className="block md:hidden"/> Become a Reality
+            More than just a tech company
           </h2>
           <p className="text-center md:text-left lg:text-lg ">
             We are dedicated to empowering businesses and individuals through
