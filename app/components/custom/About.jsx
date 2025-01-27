@@ -10,7 +10,7 @@ function About() {
           <h2 className="text-3xl text-center md:text-left lg:text-4xl font-bold text-primaryDark mb-5">
             Where Ideas <br className="block md:hidden"/> Become a Reality
           </h2>
-          <p className="text-gray-600 text-center md:text-left lg:text-lg ">
+          <p className="text-center md:text-left lg:text-lg ">
             We are dedicated to empowering businesses and individuals through
             innovative technology solutions. With a focus on understanding our
             clients' unique challenges, we deliver tailored services that drive
@@ -31,7 +31,7 @@ function About() {
             </div>
             <div>
               <h2 className="font-bold lg:text-xl mb-2">Our Mission</h2>
-              <p className="lg:text-lg text-gray-600">
+              <p className="lg:text-lg">
                 To empower businesses and individuals with innovative technology
                 solutions that drive efficiency, enhance productivity, and
                 foster growth in a rapidly evolving digital landscape.
@@ -44,7 +44,7 @@ function About() {
             </div>
             <div>
               <h2 className="font-bold lg:text-xl mb-2">Our Vission</h2>
-              <p className="lg:text-lg text-gray-600">
+              <p className="lg:text-lg">
                 To be a leading provider of transformative technology solutions,
                 enabling a connected and sustainable future for all users, from
                 startups to large enterprises.

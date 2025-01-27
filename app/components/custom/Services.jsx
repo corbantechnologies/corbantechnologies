@@ -51,8 +51,7 @@ const cards1 = [
 
 function Services() {
   return (
-    <div className="bg-slate-50 py-5">
-      <div className="max-w-[1200px] mx-auto px-4 lg:px-8">
+      <div className="max-w-[1200px] py-10 mx-auto px-4 lg:px-8">
         <div>
           <h1 className="text-primary text-center font-bold text-lg">
             Our services
@@ -60,22 +59,21 @@ function Services() {
           <h2 className="text-3xl lg:text-4xl text-center font-semibold">
             How we help you
           </h2>
-          <p className="text-gray-600 text-center lg:text-lg">
-            Corban Technologies offers a wide range of digital solutions{" "}
-            <br className="hidden md:block" /> tailored to meet your business
-            needs.
+          <p className="text-center lg:text-lg">
+          Whether you&apos;re creating your product from scratch, modernizing it, or continuously
+            <br className="hidden md:block" /> improving it, we have the expertise your business requires.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 mb-5 px-4 md:px-0">
           {cards1.map((card) => (
-            <article key={card.id}>
-              <div className="my-4 border border-gray-300 size-12 text-gray-600 grid place-content-center rounded-md">
+            <article key={card.id} className="border bg-[#f9f9fb] px-4 rounded-xl">
+              <div className="my-4 border border-gray-300 size-12 grid place-content-center rounded-md">
                 {card.icon}
               </div>
-              <h2 className="mb-4 text-gray-950 text-xl flex items-center border-l-4 border-primary pl-2">
+              <h2 className="mb-4 text-xl flex items-center border-l-4 border-primary pl-2">
                 {card.title}
               </h2>
-              <p className=" text-gray-600 mb-4">{card.desc}</p>
+              <p className="mb-4">{card.desc}</p>
             </article>
           ))}
         </div>
@@ -85,7 +83,6 @@ function Services() {
           </button>
         </div>
       </div>
-    </div>
   );
 }
 
