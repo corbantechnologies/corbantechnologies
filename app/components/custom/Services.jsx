@@ -51,7 +51,7 @@ const cards1 = [
 
 function Services() {
   return (
-      <div className="max-w-[1200px] py-10 mx-auto px-4 lg:px-8">
+      <div className="max-w-[1200px] bg-slate-50 py-10 mx-auto px-4 lg:px-8">
         <div>
           <h1 className="text-primary text-center font-bold text-lg">
             Our services
@@ -66,7 +66,7 @@ function Services() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 mb-5">
           {cards1.map((card) => (
-            <article key={card.id} className="border bg-[#f9f9fb] px-4 rounded-xl">
+            <article key={card.id} className="shadow bg-white px-4 rounded-xl">
               <div className="my-4 border border-gray-300 size-12 grid place-content-center rounded-md">
                 {card.icon}
               </div>

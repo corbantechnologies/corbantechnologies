@@ -57,7 +57,7 @@ const userCategories = [
 
 function CallToAction() {
   return (
-    <div className="bg-slate-50 py-5">
+    <div className="py-5">
         <div className="px-4 lg:px-8 mt-5 mb-10 max-w-[1200px] mx-auto">
             <h1 className="text-primary text-center font-bold text-sm mb-1">INDUSTRIES</h1>
             <h2 className="text-3xl lg:text-4xl text-center font-bold mb-3">We provide solutions for every indusry</h2>

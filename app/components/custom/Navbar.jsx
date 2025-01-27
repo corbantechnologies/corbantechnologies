@@ -48,9 +48,6 @@ function Navbar() {
                 Get in Touch
                 </button>
         {menuOpen && <ul className={`absolute w-[80vw] pl-8 top-14 md:top-16 h-[100vh] bg-white text-black z-50 transition-all lg:hidden ${menuOpen ? 'left-0' :'-left-[1000px]'}`}>
-          {/* <li className="mt-2">
-          <Image src='/logoSmNoBg.png' alt="logo" width={150} height={80} className="w-[120px] md:w-[150px]" />
-          </li> */}
             {links.map((link)=>(
                 <li key={link.id} className="py-3" onClick={()=>setMenuOpen(false)}>
                     <a href={link.href}>{link.title}</a>
