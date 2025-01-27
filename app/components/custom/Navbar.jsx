@@ -28,7 +28,7 @@ function Navbar() {
     },[])
 
   return (
-    <div className={`flex fixed w-full md:border-none ${active ? ' bg-black/45 backdrop-blur-sm text-white ':'bg-white '} px-4 lg:px-8 bg-dark z-50 justify-between items-center py-2`}>
+    <div className={`flex fixed w-full md:border-none ${active && !menuOpen ? ' bg-black/45 backdrop-blur-sm text-white ':'bg-white '} px-4 lg:px-8 bg-dark z-50 justify-between items-center py-2`}>
         <Image src='/logoSmNoBg.png' alt="logo" width={150} height={80} className="w-[120px] md:w-[150px]" />
         <button onClick={()=>setMenuOpen(prev=>!prev)} className={`lg:hidden border ${active ? 'border-white ' :'border-black '} border-opacity-30 size-8 inline-flex justify-center items-center rounded-lg`}>
       {menuOpen ?
