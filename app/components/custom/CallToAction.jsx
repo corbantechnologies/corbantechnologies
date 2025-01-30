@@ -60,7 +60,7 @@ function CallToAction() {
     <div className="py-5">
         <div className="px-4 lg:px-8 mt-5 mb-10 max-w-[1200px] mx-auto">
             <h1 className="text-primary text-center font-bold text-sm mb-1">INDUSTRIES</h1>
-            <h2 className="text-3xl lg:text-4xl text-center font-bold mb-3">We provide solutions for every indusry</h2>
+            <h2 className="text-3xl lg:text-4xl text-center font-bold mb-3">We provide solutions for every industry</h2>
             <p className='text-center lg:text-lg'>Our team of experienced software engineers, architects, and developers use cutting-edge <br /> technologies and approaches to drive innovation across diverse industries.</p>
             <p className='mb-8 text-center lg:text-lg'>Together, we can bring your vision to life.</p>
             <div className="mt-5 w-full overflow-auto no-scrollbar flex gap-5 pb-5">
