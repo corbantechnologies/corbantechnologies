@@ -9,6 +9,12 @@ import {
   LockKeyhole,
   Smartphone,
 } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 const cards1 = [
   {
@@ -51,22 +57,23 @@ const cards1 = [
 
 function Services() {
   return (
-      <div className="max-w-[1200px] bg-slate-50 py-10 mx-auto px-4 lg:px-8">
-        <div>
-          <h1 className="text-primary text-center font-bold text-lg">
+      <div className="max-w-[1200px] py-10 mx-auto px-4 lg:px-8 flex flex-col md:flex-row">
+        <div className='flex-1 md:h-full md:sticky md:top-[90px]'>
+          <h1 className="text-primary font-bold text-lg">
             Our services
           </h1>
-          <h2 className="text-3xl lg:text-4xl text-center font-semibold">
-            How we help you
+          <h2 className="text-3xl text-secondaryBlue lg:text-4xl font-semibold tracking-wide">
+            Accelerating your results <br/> with our comprehensive solutions
           </h2>
-          <p className="text-center lg:text-lg">
+          {/* <p className="lg:text-lg text-secondaryBlue">
           Whether you&apos;re creating your product from scratch, modernizing it, or continuously
             <br className="hidden md:block" /> improving it, we have the expertise your business requires.
-          </p>
+          </p> */}
+          <img src="/paperPlane.webp" alt="paper plane" className="hidden md:block" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 mb-5">
+        {/* <div className="flex-1 mt-5 md:mt-0">
           {cards1.map((card) => (
-            <article key={card.id} className="shadow bg-white px-4 rounded-xl">
+            <article key={card.id} className="shadow bg-white mb-5 md:mb-3 p-4 rounded-xl">
               <div className="my-4 border border-gray-300 size-12 grid place-content-center rounded-md">
                 {card.icon}
               </div>
@@ -76,11 +83,18 @@ function Services() {
               <p className="mb-4">{card.desc}</p>
             </article>
           ))}
-        </div>
-        <div className="flex justify-center">
-          <button className=" rounded-full px-5 py-3 bg-primary text-white flex justify-between items-center">
-            Learn more <ChevronsRight />{" "}
-          </button>
+        </div> */}
+        <div className="flex-1 mt-5 md:mt-0">
+        <Accordion type="single" collapsible className="md:w-3/4 mx-auto bg-slate-50 rounded-xl p-6">
+          {cards1.map((card)=>(
+      <AccordionItem value={card.title} key={card.id}>
+        <AccordionTrigger className='text-lg md:text-xl font-medium text-secondaryBlue'>{card.title}</AccordionTrigger>
+        <AccordionContent className='text-gray-600 text-base'>
+        {card.desc}
+        </AccordionContent>
+      </AccordionItem>
+          ))}
+    </Accordion>
         </div>
       </div>
   );
