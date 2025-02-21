@@ -20,55 +20,57 @@ const cards1 = [
   {
     id: 1,
     title: "Web Development",
-    desc: "Custom web development services that create responsive, user-friendly websites tailored to enhance your online presence and drive engagement.",
+    desc: "We are dedicated to turning your bold ideas into scalable, efficient, and high-performing web platforms that thrive in the digital landscape. With our expertise in UI/UX design, business analysis, and development, we create, build, and support a range of solutions—from proof of concepts (POCs) and minimum viable products (MVPs) to enterprise-level applications.",
+    solutions:['Website development','E-commerce solutions','SEO optimization','Website maintenance'],
     icon: <Globe />,
   },
   {
     id: 2,
     title: "Mobile Development",
-    desc: "Expert mobile app development that delivers intuitive, high-performance applications for iOS and Android, designed to meet your business needs and engage users.",
+    desc: "Just share your idea with us, and we'll handle the rest. We offer complete mobile development services for any platform, guiding you through every step—from concept and UI/UX design to prototyping, coding, testing, and ongoing support. We ensure a smooth process that stays on schedule and within your budget.",
+    solutions:['iOS', 'Android', 'Hybrid'],
     icon: <Smartphone />,
   },
   {
     id: 3,
     title: "Cyber Security Solutions",
-    desc: "Safeguarding your invaluable digital assets and fortifying your online against the relentless and ever-evolving global landscape of cyber threats.",
+    desc: "We prioritize your safety in the digital world. Our comprehensive cybersecurity solutions are designed to protect your business from threats and vulnerabilities. We assess your current security posture, implement robust measures, and provide ongoing support to ensure your data and systems remain secure.",
+    solutions:['Risk Assessment', 'Incident Reponse', 'Compliance Support', 'Employee Training'],
     icon: <LockKeyhole />,
   },
   {
     id: 4,
     title: "Artificial Intelligence",
-    desc: "We provide tailored AI solutions that enhance efficiency, drive innovation, and transform data into actionable insights.",
+    desc: "Unlock the potential of artificial intelligence with our tailored solutions. We help you integrate AI into your business processes, enhancing efficiency and decision-making. From developing intelligent algorithms to implementing machine learning models, we guide you every step of the way to harness the power of AI.",
+    solutions:['Machine learning models', 'Natural language processing', 'Predictive analysis', 'AI integration'],
     icon: <Bot />,
   },
   {
     id: 5,
     title: "Cloud Services and Migration",
-    desc: "Transitioning your business to the cloud, unlocking scalability, efficiency, and enhanced collaboration across your organization.",
+    desc: "Embrace the future with our cloud services and migration solutions. We simplify the transition to the cloud, ensuring your data and applications are securely moved and optimized for performance. Our team provides ongoing support to help you leverage the full benefits of cloud technology, enhancing flexibility and scalability for your business.",
+    solutions:['Infrastructure setup', 'Migration planning', 'Managed cloud services'],
     icon: <Cloud />,
   },
   {
     id: 6,
     title: "Consultancy Services",
-    desc: "Professional consultancy services for web and mobile software, providing expert guidance to optimize development processes, enhance user experience, and drive project success.",
+    desc: "Our consultancy services are here to guide you through your business challenges. We offer expert advice and strategies tailored to your specific needs, helping you make informed decisions and drive growth. Whether you need insights on technology, operations, or market trends, we’re here to support your journey to success.",
+    solutions:['Business analysis','Technology consulting','Market Research','Training & Development'],
     icon: <ChartPie />,
   },
 ];
 
 function Services() {
   return (
-      <div className="max-w-[1200px] py-10 mx-auto px-4 lg:px-8 flex flex-col md:flex-row">
+      <div className="max-w-[1200px] pt-5 pb-10 mx-auto px-4 lg:px-8 flex flex-col md:flex-row">
         <div className='flex-1 md:h-full md:sticky md:top-[90px]'>
           <h1 className="text-primary font-bold text-lg">
             Our services
           </h1>
-          <h2 className="text-3xl text-secondaryBlue lg:text-4xl font-semibold tracking-wide">
+          <h2 className="text-2xl md:text-3xl text-secondaryBlue lg:text-4xl font-semibold tracking-wide">
             Accelerating your results <br/> with our comprehensive solutions
           </h2>
-          {/* <p className="lg:text-lg text-secondaryBlue">
-          Whether you&apos;re creating your product from scratch, modernizing it, or continuously
-            <br className="hidden md:block" /> improving it, we have the expertise your business requires.
-          </p> */}
           <img src="/paperPlane.webp" alt="paper plane" className="hidden md:block" />
         </div>
         {/* <div className="flex-1 mt-5 md:mt-0">
@@ -88,9 +90,14 @@ function Services() {
         <Accordion type="single" collapsible className="md:w-3/4 mx-auto bg-slate-50 rounded-xl p-6">
           {cards1.map((card)=>(
       <AccordionItem value={card.title} key={card.id}>
-        <AccordionTrigger className='text-lg md:text-xl font-medium text-secondaryBlue'>{card.title}</AccordionTrigger>
+        <AccordionTrigger className='text-lg md:text-xl font-semibold text-secondaryBlue'>{card.title}</AccordionTrigger>
         <AccordionContent className='text-gray-600 text-base'>
         {card.desc}
+        <ul className='list-inside list-disc mt-3 marker:text-primary'>
+          {card.solutions.map((solution)=>(
+            <li key={solution}>{solution}</li>
+          ))}
+        </ul>
         </AccordionContent>
       </AccordionItem>
           ))}

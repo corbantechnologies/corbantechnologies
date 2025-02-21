@@ -17,7 +17,7 @@ const ourWork = [
     description:
       "Nafsi Reset is a dedicated mental wellness website aimed at providing resources, support, and community for individuals seeking mental wellness. The platform offers articles, forums, and professional guidance to help users on their mental health journey.",
     service: "Website Development",
-    img: "https://ik.imagekit.io/k0jemnbco/Main_Page_New/tr:w-1200/case-pause.webp",
+    img: "/nafsi.jpg",
   },
   {
     title: "Safaris - tours & safaris",
@@ -25,7 +25,7 @@ const ourWork = [
     description:
       "Safaris is an innovative tours web application that connects travelers with unique experiences. Users can explore various tour packages, read reviews, and book their adventures with ease, all while enjoying a visually appealing interface.",
     service: "Software Development",
-    img: "https://ik.imagekit.io/k0jemnbco/Main_Page_New/tr:w-1200/case-Lyte.webp",
+    img: "/tours.jpg",
   },
   {
     title: "Suppco - construction supplies marketplace",
@@ -39,17 +39,17 @@ const ourWork = [
 
 function Work() {
   const [selected, setSelected] = useState(1);
-  console.log(selected)
   return (
-    <div className="bg-[#f2f4f7]">
-    <div className="max-w-[1200px] pt-5 pb-10 mx-auto px-4 lg:px-8">
-      <section className="flex flex-col-reverse md:flex-row gap-3 md:gap-8 items-center">
+    <div>
+    <div className="max-w-[1200px] pt-5 md:pt-0 pb-10 md:pb-0 mx-auto px-4 lg:px-8">
+      <section className="flex flex-col md:flex-row gap-3 md:gap-8 md:items-center">
+      <h1 className="text-primary md:hidden font-bold text-lg">Our work</h1>
         <aside>
-          <ul className="flex md:flex-col gap-3">
+          <ul className="flex md:flex-col gap-1 md:gap-3">
             {Array.from({ length: 4 }, (_, i) => (
               <li
                 key={i}
-                className={`size-9 rounded-full grid place-content-center hover:bg-[#f2f4f7] ${
+                className={`size-9 rounded-full grid place-content-center md:hover:bg-[#f2f4f7] ${
                   selected === i+1 ? "bg-primary text-white" : ""
                 }`}
               >
@@ -69,14 +69,14 @@ function Work() {
               }`}
             >
               <div className="space-y-4">
-                <h1 className="text-primary font-bold text-lg">Our work</h1>
-                <h2 className="text-secondaryBlue text-3xl lg:text-4xl font-semibold">
+                <h1 className="text-primary hidden md:block font-bold text-lg">Our work</h1>
+                <h2 className="text-secondaryBlue !mt-0 text-2xl md:text-3xl lg:text-4xl font-semibold">
                   {work.title}
                 </h2>
                 <span className="bg-[#f2f4f7] block w-fit text-secondaryBlue text-sm px-4 py-2 rounded-full">
                   {work.service}
                 </span>
-                <p className="text-gray-600 text-lg">{work.description}</p>
+                <p className="text-gray-600 text-base md:text-lg">{work.description}</p>
                 <button className="bg-primary text-white px-5 py-2 rounded-full">Want one like this?</button>
               </div>
               <img
