@@ -11,17 +11,7 @@ const userCategories = [
             'Mobile banking applications',
             'Investment platforms',
         ],
-        bg:'/bg1.jpg'
-    },
-    {
-        title: "Healthtech",
-        heading:'Transforming patient care and healthcare delivery',
-        description: [
-            'Telemedicine',
-            'Electronic Health Records (EHR)',
-            'Health management systems',
-        ],
-        bg:'/bg2.jpg'
+        bg:'/fintech.webp'
     },
     {
         title: "Edtech",
@@ -31,7 +21,7 @@ const userCategories = [
             'Learning Management Systems (LMS)',
             'Management software'
         ],
-        bg:'/bg4.jpg'
+        bg:'/edtech.webp'
     },
     {
         title: "Ecommerce",
@@ -41,7 +31,7 @@ const userCategories = [
             'Payment Solutions', 
             'Inventory management systems'
         ],
-        bg:'/bg3.jpg'
+        bg:'/ecom.webp'
     },
     {
         title: "Real Estate",
@@ -51,22 +41,21 @@ const userCategories = [
             'Property management systems',
             'Virtual tour applications'
         ],
-        bg:'/bg2.jpg'
+        bg:'/estate.webp'
     },
 ];
 
-function CallToAction() {
+function Industries() {
   return (
-    <div className="py-5">
-        <div className="px-4 lg:px-8 mt-5 mb-10 max-w-[1200px] mx-auto">
-            <h1 className="text-primary text-center font-bold text-sm mb-1">INDUSTRIES</h1>
-            <h2 className="text-3xl lg:text-4xl text-center font-bold mb-3">We provide solutions for every industry</h2>
-            <p className='text-center lg:text-lg'>Our team of experienced software engineers, architects, and developers use cutting-edge <br /> technologies and approaches to drive innovation across diverse industries.</p>
-            <p className='mb-8 text-center lg:text-lg'>Together, we can bring your vision to life.</p>
-            <div className="mt-5 w-full overflow-auto no-scrollbar flex gap-5 pb-5">
+    <div className="py-5 ">
+        <div className="px-4 lg:px-8 mt-5 mb-8 max-w-[1200px] mx-auto">
+            <h1 className="text-primary font-bold text-sm mb-1">INDUSTRIES</h1>
+            <h2 className="text-3xl text-secondaryBlue lg:text-4xl font-bold mb-3">We provide solutions for every industry</h2>
+            <p className='lg:text-lg text-secondaryBlue'>Our team of experienced software engineers, architects, and developers use cutting-edge <br /> technologies and approaches to drive innovation across diverse industries.</p>
+            <p className='mb-8 lg:text-lg text-secondaryBlue'>Together, we can bring your vision to life.</p>
+            <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
                 {userCategories.map((cat)=>(
-                <div style={{backgroundImage: `url(${cat.bg})`, backgroundSize:'cover', backgroundPosition:'center'  }} key={cat.title} className="rounded-xl overflow-hidden w-[320px] md:w-[350px] flex-shrink-0 ">
-                <div className="p-5 md:p-8 flex h-full flex-col justify-between">
+                <div key={cat.title} className="md:p-8 relative flex sm:flex-col-reverse lg:flex-row h-full bg-[#f2f4f7] rounded-xl p-4 justify-between">
                     <div>
                     <p className="text-2xl mb-2">{cat.title}</p>
                     <p className="mb-3 text-[17px] text-gray-600">{cat.heading}</p>
@@ -75,17 +64,15 @@ function CallToAction() {
                             <li key={desc} className="text-[#696969] text-[15px] mb-3 flex items-center gap-1"><BadgeCheck size={20} className="flex-shrink-0 text-primary" /> {desc}</li>
                         ))}
                     </ul>
+                    <button className="bg-primary text-white px-5 py-2 rounded-full">Learn more</button>
                     </div>
+                    <img src={cat.bg} alt="industry" className='absolute -top-24 -right-16 sm:relative sm:top-0 sm:right-0 w-[120px] sm:w-[150px] lg:w-[240px] object-contain' />
                 </div>
-            </div> 
                 )) }
             </div>
-                    <div className="flex justify-center">
-                    <button className="rounded-full px-5 py-3 mt-5 bg-primary text-white">Schedule a meeting </button>
-                    </div>
         </div>
     </div>
   )
 }
 
-export default CallToAction
+export default Industries
