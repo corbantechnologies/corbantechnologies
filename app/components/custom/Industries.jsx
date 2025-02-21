@@ -47,13 +47,13 @@ const userCategories = [
 
 function Industries() {
   return (
-    <div className="py-5 ">
-        <div className="px-4 lg:px-8 mt-5 mb-8 max-w-[1200px] mx-auto">
+    <div className="md:py-5">
+        <div className="px-4 lg:px-8 md:mt-5 mb-8 max-w-[1200px] mx-auto">
             <h1 className="text-primary font-bold text-sm mb-1">INDUSTRIES</h1>
-            <h2 className="text-3xl text-secondaryBlue lg:text-4xl font-bold mb-3">We provide solutions for every industry</h2>
+            <h2 className="text-2xl md:text-3xl text-secondaryBlue lg:text-4xl font-bold mb-3">We provide solutions for every industry</h2>
             <p className='lg:text-lg text-secondaryBlue'>Our team of experienced software engineers, architects, and developers use cutting-edge <br /> technologies and approaches to drive innovation across diverse industries.</p>
             <p className='mb-8 lg:text-lg text-secondaryBlue'>Together, we can bring your vision to life.</p>
-            <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
+            <div className="mt-5 grid grid-cols-1 gap-8 md:gap-5 md:grid-cols-2">
                 {userCategories.map((cat)=>(
                 <div key={cat.title} className="md:p-8 relative flex sm:flex-col-reverse lg:flex-row h-full bg-[#f2f4f7] rounded-xl p-4 justify-between">
                     <div>
@@ -66,7 +66,7 @@ function Industries() {
                     </ul>
                     <button className="bg-primary text-white px-5 py-2 rounded-full">Learn more</button>
                     </div>
-                    <img src={cat.bg} alt="industry" className='absolute -top-24 -right-16 sm:relative sm:top-0 sm:right-0 w-[120px] sm:w-[150px] lg:w-[240px] object-contain' />
+                    <img src={cat.bg} alt="industry" className='absolute -top-10 -right-4 sm:relative sm:top-0 sm:right-0 w-[120px] sm:w-[150px] lg:w-[240px] object-contain' />
                 </div>
                 )) }
             </div>
