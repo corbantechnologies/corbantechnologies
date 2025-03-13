@@ -51,7 +51,7 @@ const userCategories = [
 
 function Industries() {
   return (
-    <div className="py-10 bg-orange-50">
+    <div className="">
         <div className="px-4 lg:px-8 md:mt-5 mb-8 max-w-[1200px] mx-auto">
             <h1 className="text-primary font-bold text-sm mb-1">INDUSTRIES</h1>
             <h2 className="text-2xl md:text-3xl text-secondaryBlue lg:text-4xl font-bold mb-3">We provide solutions for every industry</h2>
@@ -59,7 +59,7 @@ function Industries() {
             <p className='mb-8 lg:text-lg text-secondaryBlue'>Together, we can bring your vision to life.</p>
             <div className="mt-5 flex flex-col md:flex-row md:h-[420px] snap-x pb-5 overflow-auto gap-8 md:gap-5 ">
                 {userCategories.map((cat)=>(
-                <div key={cat.title} className="md:w-[350px] h-[400px] md:h-full flex-shrink-0 snap-start md:p-8 relative bg-white flex sm:flex-col-reverse lg:flex-row rounded-lg p-6 justify-between">
+                <div key={cat.title} className="md:w-[350px] h-[400px] md:h-full flex-shrink-0 snap-start md:p-8 relative border flex sm:flex-col-reverse lg:flex-row rounded-lg p-6 justify-between">
                     <div>
                     <p className="text-xl mb-2">{cat.title}</p>
                     <p className="mb-10 text-[15px] tracking-wide leading-relaxed text-secondaryBlue mt-3">{cat.heading}</p>
