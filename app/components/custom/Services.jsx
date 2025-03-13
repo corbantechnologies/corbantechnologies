@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/accordion"
 import RevealRight from "@/lib/RevealRight";
 import RevealLeft from "@/lib/RevealLeft";
+import Reveal from "@/lib/Reveal";
 
 const cards1 = [
   {
@@ -25,7 +26,7 @@ const cards1 = [
     desc: "We are dedicated to turning your bold ideas into scalable, efficient, and high-performing web platforms that thrive in the digital landscape. With our expertise in UI/UX design, business analysis, and development, we create, build, and support a range of solutions—from proof of concepts (POCs) and minimum viable products (MVPs) to enterprise-level applications.",
     solutions:['Website development','E-commerce solutions','SEO optimization','Website maintenance'],
     icon: <Globe />,
-    image:'/nafsi.jpg'
+    image:'/nafsi.png'
   },
   {
     id: 2,
@@ -82,16 +83,13 @@ function Services() {
           </h2>
           <div className="group">
             {cards1.map((card)=>(
-              <article key={card.id} className="grid grid-cols-1 md:grid-cols-2 group mt-16 md:mt-28 gap-5 md:gap-10 items-center">
-                <div className="md:group-even:col-start-2 md:row-start-1">
-                <RevealLeft>
-                <div className="h-[200px] md:h-[300px] overflow-hidden">
+              <div key={card.id} className="group">
+              <Reveal>
+              <article className="grid grid-cols-1 md:grid-cols-2 mt-16 md:mt-28 gap-5 md:gap-10 items-center">
+                <div className="h-[200px] md:h-[300px] overflow-hidden md:group-even:col-start-2 md:row-start-1">
                   <img src={card.image} alt={card.title} className='rounded-xl object-cover h-full w-full' />
                 </div>
-                </RevealLeft>
-                </div>
                 <div className="md:group-even:col-start-1">
-                <RevealRight>
                 <h1 className="text-primary font-bold text-lg">
                   {card.title}
                 </h1>
@@ -101,9 +99,10 @@ function Services() {
                     <li key={solution}>{solution}</li>
                   ))}
                 </ul>
-              </RevealRight>
                 </div>
               </article>
+              </Reveal>
+              </div>
             ))}
           </div>
         {/* <div className="flex-1 mt-5 md:mt-0">

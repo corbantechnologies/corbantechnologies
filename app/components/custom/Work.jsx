@@ -1,5 +1,6 @@
 "use client";
 
+import { Dot } from "lucide-react";
 import { useState } from "react";
 
 const ourWork = [
@@ -17,7 +18,7 @@ const ourWork = [
     description:
       "Nafsi Reset is a dedicated mental wellness website aimed at providing resources, support, and community for individuals seeking mental wellness. The platform offers articles, forums, and professional guidance to help users on their mental health journey.",
     service: "Website Development",
-    img: "/nafsi.jpg",
+    img: "/nafsi.png",
   },
   {
     title: "Safaris - tours & safaris",
@@ -40,7 +41,7 @@ const ourWork = [
 function Work() {
   const [selected, setSelected] = useState(1);
   return (
-    <div className="bg-slate-100">
+    <div className="bg-orange-50">
     <div className="max-w-[1200px] pt-10 md:pt-0 pb-10 md:pb-0 mx-auto px-4 lg:px-8">
       <section className="flex flex-col md:flex-row gap-3 md:gap-8 md:items-center">
       <h1 className="text-primary md:hidden font-bold text-lg">Our work</h1>
@@ -73,8 +74,8 @@ function Work() {
                 <h2 className="text-secondaryBlue !mt-0 text-2xl md:text-3xl lg:text-4xl font-semibold">
                   {work.title}
                 </h2>
-                <span className="bg-white block w-fit text-secondaryBlue text-sm px-4 py-2 rounded-full">
-                  {work.service}
+                <span className="text-primary flex items-center text-sm">
+                  <Dot/> {work.service}
                 </span>
                 <p className="text-gray-600 text-base md:text-lg">{work.description}</p>
                 <button className="bg-primary text-white px-5 py-2 rounded-full">Want one like this?</button>

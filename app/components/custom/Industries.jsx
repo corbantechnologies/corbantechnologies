@@ -51,7 +51,7 @@ const userCategories = [
 
 function Industries() {
   return (
-    <div className="py-10 bg-slate-100">
+    <div className="py-10 bg-orange-50">
         <div className="px-4 lg:px-8 md:mt-5 mb-8 max-w-[1200px] mx-auto">
             <h1 className="text-primary font-bold text-sm mb-1">INDUSTRIES</h1>
             <h2 className="text-2xl md:text-3xl text-secondaryBlue lg:text-4xl font-bold mb-3">We provide solutions for every industry</h2>
@@ -75,12 +75,7 @@ function Industries() {
                 )) }
             </div>
         </div>
-        <div className="bg-white max-w-[1200px] mx-4 md:mx-auto mb-10 h-[50vh] grid place-content-center p-5 rounded-xl gap-8">
-        <p className="text-3xl md:text-5xl text-center text-secondaryBlue font-semibold">The partner to bring<br /> your vision to life.</p>
-        <div className="flex justify-center">
-        <button className="bg-primary w-full md:w-fit text-white rounded-full px-8 py-3">Talk to Us</button>
-        </div>
-       </div>
+        
     </div>
   )
 }
