@@ -41,8 +41,8 @@ const ourWork = [
 function Work() {
   const [selected, setSelected] = useState(1);
   return (
-    <div className="bg-orange-50">
-    <div className="max-w-[1200px] pt-10 md:pt-0 pb-10 md:pb-0 mx-auto px-4 lg:px-8">
+    <div className="">
+    <div className="max-w-[1200px] md:pb-0 mx-auto px-4 lg:px-8">
       <section className="flex flex-col md:flex-row gap-3 md:gap-8 md:items-center">
       <h1 className="text-primary md:hidden font-bold text-lg">Our work</h1>
         <aside>

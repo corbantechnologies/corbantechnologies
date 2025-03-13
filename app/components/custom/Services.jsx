@@ -72,25 +72,25 @@ const cards1 = [
 
 function Services() {
   return (
-    <div className="py-10">
+    <div className="">
       <div className="max-w-[1200px] pt-5 pb-10 mx-auto px-4 lg:px-8">
         
-          <h1 className="text-primary text-center font-bold text-lg">
+          <h1 className="text-primary font-bold text-lg">
             Our services
           </h1>
-          <h2 className="text-2xl text-center md:text-3xl text-secondaryBlue lg:text-4xl font-semibold tracking-wide">
+          <h2 className="text-2xl md:text-3xl text-secondaryBlue lg:text-4xl font-semibold tracking-wide">
             Accelerating your results with our <br className="hidden md:block"/> comprehensive solutions
           </h2>
-          <div className="group">
+          {/* <div className="group">
             {cards1.map((card)=>(
               <div key={card.id} className="group">
               <Reveal>
-              <article className="grid grid-cols-1 md:grid-cols-2 mt-16 md:mt-28 gap-5 md:gap-10 items-center">
+              <article className="grid grid-cols-1 md:grid-cols-2 border mt-16 md:mt-28 gap-5 md:gap-10 items-center">
                 <div className="h-[200px] md:h-[300px] overflow-hidden md:group-even:col-start-2 md:row-start-1">
                   <img src={card.image} alt={card.title} className='rounded-xl object-cover h-full w-full' />
                 </div>
                 <div className="md:group-even:col-start-1">
-                <h1 className="text-primary font-bold text-lg">
+                <h1 className="text-primary font-bold text-xl">
                   {card.title}
                 </h1>
                 <p className="text-secondaryBlue">{card.desc}</p>
@@ -104,9 +104,9 @@ function Services() {
               </Reveal>
               </div>
             ))}
-          </div>
-        {/* <div className="flex-1 mt-5 md:mt-0">
-        <Accordion type="single" collapsible className="md:w-3/4 mx-auto bg-slate-50 rounded-xl p-6">
+          </div> */}
+        <div className="flex-1 mt-5 md:mt-10">
+        <Accordion type="single" collapsible className=" bg-slate-50 rounded-xl p-6">
           {cards1.map((card)=>(
       <AccordionItem value={card.title} key={card.id}>
         <AccordionTrigger className='text-lg md:text-xl font-semibold text-secondaryBlue'>{card.title}</AccordionTrigger>
@@ -121,7 +121,7 @@ function Services() {
       </AccordionItem>
           ))}
     </Accordion>
-        </div> */}
+        </div>
       </div>
     </div>
   );

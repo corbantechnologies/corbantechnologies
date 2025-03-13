@@ -2,15 +2,15 @@ import Image from "next/image"
 
 function Footer() {
   return (
-    <footer className="py-3 bg-orange-50 px-4 text-secondaryBlue">
+    <footer className="py-3 bg-slate-50 px-4 text-secondaryBlue">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5">
         <div>
             <Image src='/logoSmNoBg.png' alt="logo" width={150} height={80} />
-            <p className="text-secondaryBlue">Empowering lives through innovation & technology</p>
+            <p>Empowering lives through innovation & technology</p>
         </div>
         <div className="mt-5 md:justify-self-center">
           <h2 className="font-semibold text-2xl mb-5">Software Engineering Services</h2>
-          <ul className="text-secondaryBlue space-y-3">
+          <ul className="space-y-3">
             <li>Web Development</li>
             <li>Mobile Development</li>
             <li>Cyber Security Solutions</li>
@@ -23,7 +23,7 @@ function Footer() {
         </div>
         <div className="mt-5 md:justify-self-center">
           <h2 className="font-semibold text-2xl mb-5">Company</h2>
-          <ul className="text-secondaryBlue space-y-3">
+          <ul className="space-y-3">
             <li>Work</li>
             <li>About Us</li>
             <li>Blog</li>
@@ -31,7 +31,7 @@ function Footer() {
           </ul>
         </div>
         </div>
-        <div className="border-t pt-5 flex flex-col md:flex-row justify-between gap-5 md:items-center">
+        <div className="border-t border-t-secondaryBlue pt-5 flex flex-col md:flex-row justify-between gap-5 md:items-center">
           <p>© 2025 Corban Technologies All rights reserved.</p>
           <p>Privacy Policy</p>
           <ul className="flex gap-2">
