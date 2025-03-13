@@ -22,10 +22,10 @@ function Home() {
      <About/>
       </Reveal> */}
       <Reveal>
-     <Industries/>
+     <Services/>
       </Reveal>
       <Reveal>
-     <Services/>
+     <Industries/>
       </Reveal>
       {/* <Reveal>
      <Contact/>

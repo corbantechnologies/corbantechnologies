@@ -1,6 +1,6 @@
 'use client';
 
-import { BadgeCheck } from "lucide-react";
+import { BadgeCheck, CircleCheck } from "lucide-react";
 
 const userCategories = [
     {
@@ -11,7 +11,8 @@ const userCategories = [
             'Mobile banking applications',
             'Investment platforms',
         ],
-        bg:'/fintech.webp'
+        bg:'/fintech.webp',
+        icon:'/credit-card.png'
     },
     {
         title: "Edtech",
@@ -21,7 +22,8 @@ const userCategories = [
             'Learning Management Systems (LMS)',
             'Management software'
         ],
-        bg:'/edtech.webp'
+        bg:'/edtech.webp',
+        icon:'/graduation.png'
     },
     {
         title: "Ecommerce",
@@ -31,7 +33,8 @@ const userCategories = [
             'Payment Solutions', 
             'Inventory management systems'
         ],
-        bg:'/ecom.webp'
+        bg:'/ecom.webp',
+        icon:'/grocery-store.png'
     },
     {
         title: "Real Estate",
@@ -41,36 +44,43 @@ const userCategories = [
             'Property management systems',
             'Virtual tour applications'
         ],
-        bg:'/estate.webp'
+        bg:'/estate.webp',
+        icon:'/house.png'
     },
 ];
 
 function Industries() {
   return (
-    <div className="md:py-5">
+    <div className="py-10 bg-slate-100">
         <div className="px-4 lg:px-8 md:mt-5 mb-8 max-w-[1200px] mx-auto">
             <h1 className="text-primary font-bold text-sm mb-1">INDUSTRIES</h1>
             <h2 className="text-2xl md:text-3xl text-secondaryBlue lg:text-4xl font-bold mb-3">We provide solutions for every industry</h2>
             <p className='lg:text-lg text-secondaryBlue'>Our team of experienced software engineers, architects, and developers use cutting-edge <br /> technologies and approaches to drive innovation across diverse industries.</p>
             <p className='mb-8 lg:text-lg text-secondaryBlue'>Together, we can bring your vision to life.</p>
-            <div className="mt-5 grid grid-cols-1 gap-8 md:gap-5 md:grid-cols-2">
+            <div className="mt-5 flex flex-col md:flex-row md:h-[420px] snap-x pb-5 overflow-auto gap-8 md:gap-5 ">
                 {userCategories.map((cat)=>(
-                <div key={cat.title} className="md:p-8 relative flex sm:flex-col-reverse lg:flex-row h-full bg-[#f2f4f7] rounded-xl p-4 justify-between">
+                <div key={cat.title} className="md:w-[350px] h-[400px] md:h-full flex-shrink-0 snap-start md:p-8 relative bg-white flex sm:flex-col-reverse lg:flex-row rounded-lg p-6 justify-between">
                     <div>
-                    <p className="text-2xl mb-2">{cat.title}</p>
-                    <p className="mb-3 text-[17px] text-gray-600">{cat.heading}</p>
+                    <p className="text-xl mb-2">{cat.title}</p>
+                    <p className="mb-10 text-[15px] tracking-wide leading-relaxed text-secondaryBlue mt-3">{cat.heading}</p>
+                    <p className="text-secondaryBlue mb-5">Popular Options</p>
                     <ul>
                         {cat.description.map((desc)=>(
-                            <li key={desc} className="text-[#696969] text-[15px] mb-3 flex items-center gap-1"><BadgeCheck size={20} className="flex-shrink-0 text-primary" /> {desc}</li>
+                            <li key={desc} className="text-secondaryBlue text-sm mb-3 flex items-center gap-1"><CircleCheck size={20} fill="#ff7b00" className="flex-shrink-0 text-white" /> {desc}</li>
                         ))}
                     </ul>
-                    <button className="bg-primary text-white px-5 py-2 rounded-full">Learn more</button>
+                    <button className="bg-primary absolute bottom-8 left-6 right-6 mt-3 text-white px-5 py-2 rounded-full">Learn more</button>
                     </div>
-                    <img src={cat.bg} alt="industry" className='absolute -top-10 -right-4 sm:relative sm:top-0 sm:right-0 w-[120px] sm:w-[150px] lg:w-[240px] object-contain' />
                 </div>
                 )) }
             </div>
         </div>
+        <div className="bg-white max-w-[1200px] mx-4 md:mx-auto mb-10 h-[50vh] grid place-content-center p-5 rounded-xl gap-8">
+        <p className="text-3xl md:text-5xl text-center text-secondaryBlue font-semibold">The partner to bring<br /> your vision to life.</p>
+        <div className="flex justify-center">
+        <button className="bg-primary w-full md:w-fit text-white rounded-full px-8 py-3">Talk to Us</button>
+        </div>
+       </div>
     </div>
   )
 }
