@@ -18,18 +18,15 @@ function Home() {
       <Reveal>
      <Work/>
       </Reveal>
-      {/* <Reveal>
-     <About/>
-      </Reveal> */}
       <Reveal>
      <Services/>
       </Reveal>
       <Reveal>
      <Industries/>
       </Reveal>
-      {/* <Reveal>
-     <Contact/>
-      </Reveal> */}
+      <Reveal>
+     <About/>
+      </Reveal>
       <Reveal>
      <Footer/>
       </Reveal>
