@@ -2,15 +2,15 @@ import Image from "next/image"
 
 function Footer() {
   return (
-    <footer className="py-3 px-4 bg-slate-50">
+    <footer className="py-3 bg-black px-4 text-white">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5">
         <div>
             <Image src='/logoSmNoBg.png' alt="logo" width={150} height={80} />
-            <p className="text-gray-700">Empowering lives through innovation & technology</p>
+            <p className="text-white">Empowering lives through innovation & technology</p>
         </div>
         <div className="mt-5 md:justify-self-center">
           <h2 className="font-semibold text-2xl mb-5">Software Engineering Services</h2>
-          <ul className="text-gray-700 space-y-3">
+          <ul className="text-white space-y-3">
             <li>Web Development</li>
             <li>Mobile Development</li>
             <li>Cyber Security Solutions</li>
@@ -23,7 +23,7 @@ function Footer() {
         </div>
         <div className="mt-5 md:justify-self-center">
           <h2 className="font-semibold text-2xl mb-5">Company</h2>
-          <ul className="text-gray-700 space-y-3">
+          <ul className="text-white space-y-3">
             <li>Work</li>
             <li>About Us</li>
             <li>Blog</li>
